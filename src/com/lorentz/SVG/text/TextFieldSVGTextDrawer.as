@@ -17,6 +17,7 @@ package com.lorentz.SVG.text
 		public function drawText(data:SVGTextToDraw):SVGDrawnText
 		{
 			var textField:TextField = new TextField();
+			textField.selectable = false;
 			textField.autoSize = TextFieldAutoSize.LEFT;
 			textField.text = data.text;
 			textField.embedFonts = data.useEmbeddedFonts;
